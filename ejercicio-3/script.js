@@ -15,9 +15,10 @@ boton.addEventListener("click", async () => {
 
     const data = await respuesta.json();
 
-    const tareasCompletadas = data.filter(elemento => {
+    const tareasCompletadas = data.filter((elemento) => {
         return elemento.completed
     })
+
 
     ul.innerHTML = "";
 
